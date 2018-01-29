@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <link href="http://vjs.zencdn.net/5.20.1/video-js.css" rel="stylesheet">
+  <script>
+    videojs.options.flash.swf = "video-js.swf";
+  </script>
+  <title>夹娃娃</title>
 </head>
 <body>
-	你好   张瀚
-	<script>alert(30)</script>
-</body>
+  <!--<div id="id_test_video" style="width:100%; height:auto;"></div>
+  <script src="//imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer.js" charset="utf-8"></script>
+  <script>
+    var player = new TcPlayer('id_test_video', {
+      "m3u8": "http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8", //请替换成实际可用的播放地址
+      "autoplay" : true,      //iOS下safari浏览器，以及大部分移动端浏览器是不开放视频自动播放这个能力的
+      "coverpic" : "http://www.test.com/myimage.jpg",
+      "width" :  '480',//视频的显示宽度，请尽量使用视频分辨率宽度
+      "height" : '320'//视频的显示高度，请尽量使用视频分辨率高度
+    });
+  </script>-->
+  <video id="example_video_1" class="video-js vjs-default-skin" autoplay preload="auto" width="640" height="320" poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}">
+    <source src="rtmp://live.hkstv.hk.lxdns.com/live/hks" type="rtmp/flv">
+  </video>
 
+  <script src="http://vjs.zencdn.net/5.20.1/video.js"></script>
+</body>
 </html>
