@@ -2,7 +2,14 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <link href="video-js-5.20.1/video-js.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
   <script src="video-js-5.20.1/video.min.js"></script>
   <script>
     videojs.options.flash.swf = "video-js-5.20.1/video-js.swf";
@@ -21,9 +28,10 @@
       "height" : '320'//视频的显示高度，请尽量使用视频分辨率高度
     });
   </script>-->
-  <video id="example_video_1" class="video-js vjs-default-skin" autoplay preload="auto" width="640" height="320" poster="https://digitalsynopsis.com/wp-content/uploads/2016/06/loading-animations-preloader-gifs-ui-ux-effects-5.gif" data-setup="{}">
-    <source src="rtmp://live.hkstv.hk.lxdns.com/live/hks" type="rtmp/flv">
-  </video>
+    <video id="example_video_1" class="video-js vjs-default-skin" autoplay preload="auto" style="width: 100vw" height="320" poster="https://digitalsynopsis.com/wp-content/uploads/2016/06/loading-animations-preloader-gifs-ui-ux-effects-5.gif" data-setup="{}">
+      <source src="rtmp://live.hkstv.hk.lxdns.com/live/hks" type="rtmp/flv">
+    </video>
+
 
 
 </body>
